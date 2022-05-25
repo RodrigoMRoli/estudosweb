@@ -2,4 +2,4 @@
 
 Arquivo aprendizado de Git e Github
 
-Testando status do git
+Testando status do git, mais um teste.
