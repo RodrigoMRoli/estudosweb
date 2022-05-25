@@ -82,6 +82,6 @@ Merge serve quando a sua branch e o master não estão com commits com versões 
 
 Assim como o merge ele tem a função de realocar o branch para a linha de produção principal, a diferença é que ao invés de fazer um commit extra para adicionar ao projeto de forma cronológicamente linear, ele vai criar um novo commit como se estivesse no projeto raíz e no topo do log, sem nenhum detalhe à mais para atrapalhe na leitura do log no futuro.
 
-## Boas práticas entre Merge x Rebase
+###### Boas práticas entre Merge x Rebase
 
 Sempre priorizar a utilização do Rebase por conta dessa limpeza do log do git, na utilização desnecessária do merge e com commits extras e novas linhas de branches no log, acaba ficando muito poluído e confuso para a leitura. Então uma boa prática é sempre utilizar o rebase e quando for adicionar uma nova feature ou algo maior utilizar o merge.
