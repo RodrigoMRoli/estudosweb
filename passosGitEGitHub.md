@@ -89,7 +89,7 @@ Assim como o merge ele tem a função de realocar o branch para a linha de produ
 
 Sempre priorizar a utilização do Rebase por conta dessa limpeza do log do git, na utilização desnecessária do merge e com commits extras e novas linhas de branches no log, acaba ficando muito poluído e confuso para a leitura. Então uma boa prática é sempre utilizar o rebase e quando for adicionar uma nova feature ou algo maior utilizar o merge.
 
-#Git Stash
+# Git Stash
 
 git stash
 
@@ -107,13 +107,13 @@ git stash clear
 
 >limpa todos os seus git stash caso não precise mais
 
-#Alias
+# Alias
 
 git config --global alias.s status
 
 >exelente ferramenta do unix para otimizar o tempo. No caso substituir palavas por letras no momento de gerar o comando para facilitar sua vida. No caso do exemplo ele esta substituindo 'status' por 's' então na hora de dar por exemplo um 'git status' poderia só colocar 'git s' que daria no mesmo
 
-#Tags
+# Tags
 
 git tag -a 1.0.0 -m "Curso no Finalzinho"
 
