@@ -36,6 +36,9 @@ git shortlog
    -git shortlog -sn
    >mostra de forma mais simplificada ainda, só o nome e numero de commits
 
+git show "hash code log"
+ >colocar a hash do log ele te mostra as diferenças feitas naquele commit do log
+
 # Comandos git diff
 git diff
  >mostra as modificações antes de dar commit
@@ -85,3 +88,34 @@ Assim como o merge ele tem a função de realocar o branch para a linha de produ
 ###### Boas práticas entre Merge x Rebase
 
 Sempre priorizar a utilização do Rebase por conta dessa limpeza do log do git, na utilização desnecessária do merge e com commits extras e novas linhas de branches no log, acaba ficando muito poluído e confuso para a leitura. Então uma boa prática é sempre utilizar o rebase e quando for adicionar uma nova feature ou algo maior utilizar o merge.
+
+#Git Stash
+
+git stash
+
+>digamos que você ainda esta editando um arquivo, trabalhando em algum código/bug e você precisa urgentemente parar para atualizar algum de maior importância. Ai que surge essa função, guarda as suas alterações que você não pode terminar naquele momento, salva no canto com um status de WIP (work in progress) e te livra das alterações presentes. Fica salva pra você puxar no futuro.
+
+git stash apply
+
+>dessa forma você puxa as alterações feitas anteriormente.
+
+git stash list
+
+>te mostra todas as stash que você criou
+
+git stash clear
+
+>limpa todos os seus git stash caso não precise mais
+
+#Alias
+
+git config --global alias.s status
+
+>exelente ferramenta do unix para otimizar o tempo. No caso substituir palavas por letras no momento de gerar o comando para facilitar sua vida. No caso do exemplo ele esta substituindo 'status' por 's' então na hora de dar por exemplo um 'git status' poderia só colocar 'git s' que daria no mesmo
+
+#Tags
+
+git tag -a 1.0.0 -m "Curso no Finalzinho"
+
+>Tags são a explicitação para quem ta vendo de fora das versções do seu projeto, como se fosse um game que tem vários grandes updates. Fica disponível para quem quiser os arquivos compactados, release notes e o código da versção, como por exemplo: 1.0.1, 1.0.5, etc. 
+
