@@ -119,3 +119,5 @@ git tag -a 1.0.0 -m "Curso no Finalzinho"
 
 >Tags são a explicitação para quem ta vendo de fora das versções do seu projeto, como se fosse um game que tem vários grandes updates. Fica disponível para quem quiser os arquivos compactados, release notes e o código da versção, como por exemplo: 1.0.1, 1.0.5, etc. 
 
+git push origin main --tags
+>serve para subir as tags no server remoto
