@@ -1,25 +1,26 @@
 ## Configurações Básicas do Git
-git config --global user.name "Seu nome"
-git config --global user.email "Seu email"
-git config --global core.editor xxxx
+<p>'git config --global user.name "Seu nome"'</p>
+<p>'git config --global user.email "Seu email"'</p>
+<p>'git config --global core.editor xxxx'</p>
  >no caso ja foi instalado o VScode na instalação
-git config --list
+<p>'git config --list'</p>
  >vai aparecer as diversas opções de config de usuário (ignore)
 
 ## Comandos Linux
-mkdir xxxxxxxx
- >fazer uma pasta no repositório criado
+'mkdir xxx'
+ >fazer uma pasta xxx no repositório criado
 cd
  >é um comando de diretório do linux para navegar pelas pastas
 ls
  >serve para listar arquivos
 
 ## Comandos git log
-1. git log // traz o log inteiro do git
-   -git log --decorate 
-    >mais detalhado
-   -git log --author"xxx" 
-    >procura todas as modificações feitas pelo autor xxx
+1. 'git log'
+ >traz o log inteiro do git
+   -'git log --decorate'
+   >mais detalhado
+   -'git log --author"John"'
+   >procura todas as modificações feitas pelo autor John
    -git log --graph 
    >faz um gráfico com branches, versões, merge, rebranch
 2. git shortlog 
