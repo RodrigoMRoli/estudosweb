@@ -1,7 +1,3 @@
 # Github
 
-Arquivo aprendizado de Git e Github
-
-Testando status do git, mais um teste.
-
-testando git diff
+Repositório simples para fins de estudo do Git, Github, Javascript, HTML, CSS, ReactJS, Vue.js, Bootstrap, PHP, entre outros.
