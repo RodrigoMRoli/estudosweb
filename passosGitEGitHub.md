@@ -19,3 +19,11 @@ git log --graph // faz um gráfico com branches, versões, merge, rebranch
 
 Comandos git diff
 git diff //mostra as modificações antes de dar commit
+git diff --name-only //traz apenas o nome do arquivo modificado
+
+Comandos para desfazer coisas
+git checkout nomedoarquivo // se você não adicionou no 'staged' nem deu commit, esse comando vai desfazer a modificação
+git reset HEAD nomedoarquivo // remove seu arquivo do 'staged' e traz para o 'modified' status
+git reset --soft //
+git reset --mixed
+git reset --hard
