@@ -24,6 +24,6 @@ git diff --name-only //traz apenas o nome do arquivo modificado
 Comandos para desfazer coisas
 git checkout nomedoarquivo // se você não adicionou no 'staged' nem deu commit, esse comando vai desfazer a modificação
 git reset HEAD nomedoarquivo // remove seu arquivo do 'staged' e traz para o 'modified' status
-git reset --soft //
-git reset --mixed
-git reset --hard
+git reset --soft //reseta na hash anterior com seu arquivo commitado pronto em 'staged'
+git reset --mixed //reseta na hash anterior com seu arquivo commitado em 'modified'
+git reset --hard //reseta na hash anterior com tudo ignorado e deletado (não usar com mais pessoas no seu git, boas práticas)
