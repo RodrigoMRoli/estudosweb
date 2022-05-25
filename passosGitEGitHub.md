@@ -115,9 +115,28 @@ git config --global alias.s status
 
 # Tags
 
-git tag -a 1.0.0 -m "Curso no Finalzinho"
+git tag -a 1.0.0 -m "Curso Finalizado"
 
 >Tags são a explicitação para quem ta vendo de fora das versções do seu projeto, como se fosse um game que tem vários grandes updates. Fica disponível para quem quiser os arquivos compactados, release notes e o código da versção, como por exemplo: 1.0.1, 1.0.5, etc. 
 
 git push origin main --tags
 >serve para subir as tags no server remoto
+
+# Git Revert
+
+> Salve a sua Sexta-Feira!!!
+
+git revert 'hash'
+> caso você faça um commit que quebrou o projeto, quebrou o código ou algo do tipo, você pode reverter o commit para a versão anterior e você mantém as alterações que você as vezes precisa para você corrigir mais à frente sem ter que perder todo o trabalho ja feito. Diferente do git reset que apaga tudo e você senta e chora com tempo/trabalho perdido
+
+>muito importante essa feature
+
+# Deletar tag e branch remoto
+
+git push origin :'TAG'
+> substitua pela tag que você quer excluir
+
+git push origin :'BRANCH'
+> substitua pelo branch que deseja excluir
+
+Lembrando: git tag -d 'xxx' apaga a tag no seu git mas não remove do git remoto, para isso que serve esse outro comando
