@@ -2,8 +2,12 @@
 // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
 function toCamelCase(str){
-    const Arr = str.split("-")
-    return Arr
+    let regExp=/[-_]\w/ig
+    let strMod = str.replace(regExp, function(comparacao){
+        let compararInicial = comparacao.charAt(1).toUpperCase()
+        return compararInicial
+    })
+    return strMod
 }
 
 console.log(toCamelCase("the-stealth-warrior"))
