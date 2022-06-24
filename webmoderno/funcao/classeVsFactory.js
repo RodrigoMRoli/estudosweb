@@ -19,3 +19,6 @@ const criarPessoa = nome => {
 
 const p2 = criarPessoa('João')
 p2.falar()
+
+const p3 = criarPessoa('Joana')
+p2.falar()
