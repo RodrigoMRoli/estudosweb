@@ -9,7 +9,11 @@
 
 function recorde(string) {
     // execução
-    string = string.split(" ")
+    // exercicio forte
+}
+
+function compararNumeros(a, b){
+    return a - b
 }
 
 console.log(recorde("10 20 20 8 25 3 0 30 1"))
